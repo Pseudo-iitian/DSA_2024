@@ -23,6 +23,5 @@ int count(vector<int>& arr, int n, int x) {
 
 
 int main(){
-  
   return 0;
 }
