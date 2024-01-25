@@ -23,5 +23,10 @@ int count(vector<int>& arr, int n, int x) {
 
 
 int main(){
+  vector<int> arr = {1,4,5,9};
+  int n = arr.size();
+  int k = 10;
+  pair<int,int> ans = firstAndLastPosition(arr,n,k);
+  cout<<ans.first<<" "<<ans.second;
   return 0;
 }

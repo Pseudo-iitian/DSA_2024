@@ -47,6 +47,9 @@ pair<int, int> getFloorAndCeil(vector<int> &a, int n, int x) {
 }
 
 int main(){
-  
+  vector<int> arr = {1,3,7,9};
+	int n = arr.size();
+	cout<<floorValueOf(arr,n,8)<<endl;
+	cout<<ceilValueOf(arr,n,8);
   return 0;
 }
