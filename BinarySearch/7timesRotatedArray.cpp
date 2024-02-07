@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// right rotation is here ...
 int timesRotated(vector<int> &ans){
   int n = ans.size();
   int low = 0;
@@ -20,7 +21,7 @@ int timesRotated(vector<int> &ans){
     else{
       if(ans[mid]<mn){
         mn = ans[mid];
-        times = mid;
+        times = mid;  
       }
       high = mid-1;
     }
