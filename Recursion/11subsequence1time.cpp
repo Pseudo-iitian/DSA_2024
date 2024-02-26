@@ -23,7 +23,7 @@ bool printS(int ind,vector<int> arr,vector<int> empty, int k,int sum){
 }
 int main(){
     vector<int> arr = {1,2,3};  
-    int k = 1;
+    int k = 3;
     int ind = 0;
     vector<int> empty;
     int sum = 0;

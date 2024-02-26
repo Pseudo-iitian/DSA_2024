@@ -39,6 +39,7 @@ int getLastPos(vector<int> arr,int n,int k){
   }
   return ans;
 }
+
 int main(){
   vector<int> arr = {2,8,8,8,8,8,11,13};
   int n = arr.size();

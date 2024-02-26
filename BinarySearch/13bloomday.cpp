@@ -37,6 +37,8 @@ int minDays(vector<int>& bloomDay, int m, int k) {
   return ans;
 }
 
+// tc - O(n*log2(max-min+1));
+
 int main(){
   vector<int> bloomDay = {1,10,3,10,2};
   int m = 3;int k = 1;

@@ -11,7 +11,8 @@ using namespace std;
 
 #define fastio ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL);
 
-
+// here i have to solve for target sum
+// target will be given and i have to solve for two pair which can sum to become target
 int main() {
   fastio
   vector<int> arr = {2,2,3,3,2,2};

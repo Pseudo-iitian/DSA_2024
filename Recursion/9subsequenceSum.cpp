@@ -23,7 +23,7 @@ void ksubsequence(int ind,vector<int> &arr, vector<int> empty,int k,int sum){
 }
 int main(){
     vector<int> ans = {1,2,1};
-    int k = 2;
+    int k = 2; // find that subset whose sum = k;
     vector<int> empty;
     ksubsequence(0,ans,empty, k,0);
     return 0;

@@ -11,19 +11,21 @@ using namespace std;
 
 #define fastio ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL);
 
-void f(vector<int> &arr, int low, int high, int k) {
+// here we have to find the total nunber of merge sort calls is given and we have to decide for the array 
+// output the array
+
+// hame ek aisa aray bnana hai jiske number of calls = k ho (merge sort calls)
+void f(vector<int> &arr, int low, int high, int &k) {
+  // finding the mid
+  if (low >= high - 1 || k<1) return;
+  // adding a single inversion to it
   int mid = low + (high - low) / 2;
-  if (low >= high - 1) return;
-  if (k == 0) return;
   swap(arr[mid], arr[mid - 1]);
   k = k - 2;
-  f(arr, low, mid, k);
-  f(arr, mid, high, k);
+  f(arr, low, mid, k); // mid is excluded here
+  f(arr, mid, high, k); // mid is included here
 }
-
-
 // https://codeforces.com/problemset/problem/873/D
-
 
 int main() {
   fastio
@@ -38,7 +40,8 @@ int main() {
     cout<<-1;
   }
   else{
-    f(arr,0,n-1,k-1);
+    k--;
+    f(arr,0,n,k);
     for(auto &val: arr){
       cout<<val<<" ";
     }
